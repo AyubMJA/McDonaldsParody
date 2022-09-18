@@ -1,0 +1,194 @@
+/* 
+css McDonalds colour scheme
+Red - #DA291C
+Yellow - #FFC72C
+Black - #27251F
+*/
+
+/* General Global Styles */
+* {
+    font-family:'Roboto Mono', monospace;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    background-color: #DA291C;
+    height:100vh;
+    width:100%;
+}
+html{
+    font-size:22px;
+}
+
+/* General Global header Styles  */
+/* Header Section */
+header{
+    width:100%;
+    height:61px;
+    border-bottom: 1px solid #DA291C;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    z-index: 1;
+    opacity: 1;
+}
+/* header,ul,li,a {
+    background-color: #fff;
+} */
+header img{
+    height:60px;
+}
+
+li a {
+    margin:10px;
+    padding:15px;
+    color: #000;
+    text-decoration: none;
+}
+li a:hover{
+    background:rgba(255, 199, 44,.4);
+    padding:15px;
+    color:#FFC72C;
+    border-radius: 15px;
+}
+ul li{
+    display:inline-block;
+}
+main{
+    position:relative;
+    top:72px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 66px;;
+}
+/* Mission Section */
+#Mission{
+    color: #FFC72C;
+}
+#Mission img{
+    position: relative;
+    margin-top: 20px;
+}
+#Mission h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.circles{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+@keyframes animate {
+    0%{
+        opacity: 1;
+        border-radius: 0;
+        transform: translateY(0) rotate(0deg);
+    }
+    100%{
+        opacity: 0;
+        border-radius: 50%;
+        transform: translateY(-1000px) rotate(720deg);
+    }
+}
+img.mctl{
+    width: 200px;
+    height:200px;
+}
+.circles div{
+    position:absolute;
+    display: block;
+    width:20px;
+    height: 20px;
+    bottom: -200px;
+    animation: animate 25s linear infinite;
+}
+.circles div:nth-child(1){
+    left: 25%;
+    width:80px;
+    height:80px;
+    animation-delay:0s;
+}
+.circles div:nth-child(2){
+    left: 10%;
+    width:20px;
+    height:20px;
+    animation-delay:2s;
+    animation-duration: 12s;
+}
+.circles div:nth-child(3){
+    left: 70%;
+    width:20px;
+    height:20px;
+    animation-delay:4s;
+}
+.circles div:nth-child(4){
+    left: 40%;
+    width:60px;
+    height:60px;
+    animation-delay:0s;
+    animation-duration: 18s;
+}
+.circles div:nth-child(5){
+    left: 65%;
+    width:20px;
+    height:20px;
+    animation-delay:0s;
+}
+.circles div:nth-child(6){
+    left: 75%;
+    width:110px;
+    height:110px;
+    animation-delay:3s;
+}
+.circles div:nth-child(7){
+    left: 35%;
+    width:150px;
+    height:150px;
+    animation-delay:7s;
+}
+.circles div:nth-child(8){
+    left: 50%;
+    width:25px;
+    height:25px;
+    animation-delay:15s;
+    animation-duration: 45s;
+}
+.circles div:nth-child(9){
+    left: 20%;
+    width:15px;
+    height:15px;
+    animation-delay:2s;
+    animation-duration: 35s;
+}
+.circles div:nth-child(10){
+    left: 85%;
+    width:150px;
+    height:150px;
+    animation-delay:0s;
+    animation-duration: 11s;
+}
+  
+
+/* ================================= Menu page styles ================================ */
+.menu-title{
+    color:#FFC72C;
+    opacity: 0.9;
+    text-decoration-line: underline;
+}
+.menu_items{
+    background:rgba(255, 199, 44,.4);
+    padding:15px;
+    color:#FFC72C;
+    border-radius: 15px;
+    width: 90%;
+    margin-top:40px;
+}
