@@ -27,19 +27,23 @@ html{
 header{
     width:100%;
     height:61px;
-    border-bottom: 1px solid #DA291C;
+    /* border-bottom: 1px solid #DA291C; */
     display:flex;
     justify-content: space-between;
     align-items: center;
     position:fixed;
     z-index: 1;
     opacity: 1;
+    background:rgba(255, 199, 44,.6);
 }
 /* header,ul,li,a {
     background-color: #fff;
 } */
 header img{
-    height:60px;
+    height:50px;
+    border-radius: 50%;
+    margin-top:5px;
+    margin-left: 20px;
 }
 
 li a {
@@ -57,14 +61,14 @@ li a:hover{
 ul li{
     display:inline-block;
 }
-main{
+.mainSectionIndex{
     position:relative;
     top:72px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 66px;;
+    padding-bottom: 66px;
 }
 /* Mission Section */
 #Mission{
@@ -179,16 +183,85 @@ img.mctl{
   
 
 /* ================================= Menu page styles ================================ */
-.menu-title{
-    color:#FFC72C;
-    opacity: 0.9;
-    text-decoration-line: underline;
+.mainMenuSection{
+    position:relative;
+    top:72px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 66px;
 }
-.menu_items{
-    background:rgba(255, 199, 44,.4);
-    padding:15px;
-    color:#FFC72C;
-    border-radius: 15px;
-    width: 90%;
-    margin-top:40px;
+#foodSection{
+    width:75%;
+    max-width:1000px;
+    display:flex;
+    flex-direction:column;
+    padding-top:70px;   
 }
+.container_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.container_head h2{
+    margin:2% 0;
+}
+.figure_container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+figure{
+    width:400px;
+    height:67%;
+    overflow: hidden;
+    margin:1%;
+}
+figure img{
+    border-radius: 50%;
+    max-width:100%;
+    height:auto;
+    display: block;
+}
+/* .foodSection{
+    width:100%;
+}
+.column{
+    float:left;
+    width:25%;
+    padding: 0 10px;
+}
+.row{
+    margin:0 -5px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: right;
+}
+.row:after{
+    content: " ";
+    display: table;
+    clear:both;
+}
+.card h3{
+    margin-bottom: 20px;
+}
+.card img{
+    height:200px;
+    width: 250px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding:16px;
+    text-align: center;
+    background-color: #f1f1f1;
+} */
+
+/* =================== Nutrition ====================== */
